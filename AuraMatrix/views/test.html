@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3R75GWLCPJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3R75GWLCPJ');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraMatrix</title>
+    <link rel="stylesheet" href="./stylesheets/test.css">
+    <link rel="icon" href="./images/Group 10.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="welcome">
+        <center class="logo">
+            <h2 style="font-family: 'Poppins', sans-serif; font-weight: bolder;">AuraMatrix</h2>
+            <span>
+                <i><q style="font-family: 'Poppins', sans-serif;">Discover world within you</q></i>
+                <br>
+                <i style="font-family: 'Poppins', sans-serif;">Be honest with yourself</i>
+            </span>
+        </center>
+    </div>
+    <center class="questions">
+        <div>
+            <form id="personalityForm" onsubmit="handleSubmit(event)">
+                <div id="questionContainer"></div>
+                <div class="navigation-buttons">
+                    <button type="button" class="button" id="prevBtn" onclick="previousQuestion()"
+                        disabled>Previous</button>
+                    <button type="button" class="button" id="nextBtn" onclick="nextQuestion()">Next</button>
+                </div>
+                <button type="submit" class="button" id="submitBtn" style="display: none;">Predict Personality</button>
+            </form>
+        </div>
+    </center>
+    <script src="./frontend-scripts/test.js"></script>
+</body>
+
+</html>

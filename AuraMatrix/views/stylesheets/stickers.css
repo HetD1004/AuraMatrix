@@ -1,0 +1,135 @@
+.sticker-grid {
+  display: grid;
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem auto 1rem auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  align-items: center;
+  animation: fadeIn 1s ease-in;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sticker-grid>div {
+  aspect-ratio: 1;
+  border-radius: 10px;
+  position: relative;
+}
+
+.sticker-card {
+  border: 2px solid #000;
+  position: relative;
+  display: inline-block;
+}
+
+.sticker1{
+  border-radius: 8px;
+}
+
+.sticker2{
+  border-radius: 8px;
+}
+
+.sticker {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+}
+
+.download-sticker-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --bg: #000;
+  --hover-text: #fff;
+  background: var(--bg);
+  color: white;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.download-sticker-btn:hover {
+  color: var(--hover-text);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
+}
+
+.download-all-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --bg: #000;
+  --hover-text: #fff;
+  background: var(--bg);
+  color: white;
+  width: 40%;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  margin: 0 auto;
+  grid-column: 1 / -1;
+}
+
+.download-all-btn:hover {
+  color: var(--hover-text);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
+}
+
+.sticker-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .sticker-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: 75%;
+    padding: 2rem;
+    margin: 2rem auto;
+  }
+
+  .sticker {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .sticker-card {
+    width: 100%;  /* Make cards fill the container */
+  }
+
+  .result-container {
+    padding: 2rem;
+    margin: 2rem;
+    max-width: 600px;
+    width: 75%;
+    text-align: center;
+  }
+
+  .download-all-btn {
+    width: 80%;  /* Make button wider on mobile */
+  }
+
+}

@@ -51,7 +51,7 @@ Wanna run this bad boy locally? Follow these simple steps:
 
 1. **Clone this repo** 🧑‍💻
    ```bash
-   git clone https://github.com/HetPatel-0209/AuraMatrix.git
+   git clone https://github.com/HetD1004/AuraMatrix.git
    cd AuraMatrix
    ```
 
